@@ -2,6 +2,7 @@
   "name": "my-assignments",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://raphaelobinna.github.io/assignment/",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -48,10 +49,10 @@
   },
   "scripts": {
     "start": "set PORT=5000 && node scripts/start.js",
+       "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -97,6 +98,6 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"
-  },
-  "homepage": "http://raphaelobinna.github.io/myproject"
+  }
+  
 }
